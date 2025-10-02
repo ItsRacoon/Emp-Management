@@ -1,0 +1,4 @@
+- [x] Modify root pom.xml to add <modules><module>Backend</module></modules>
+- [x] Remove spring-boot-maven-plugin from root pom.xml
+- [x] Add <mainClass>com.example.Backend.BackendApplication</mainClass> to Backend/pom.xml spring-boot-maven-plugin configuration
+- [x] Test the build locally if possible
