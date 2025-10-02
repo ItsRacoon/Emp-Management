@@ -69,4 +69,25 @@ api.interceptors.response.use(
   }
 );
 
+const loginUser = async (credentials) => {
+  try {
+    const response = await fetch(`${process.env.REACT_APP_API_URL}/auth/login`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(credentials)
+    });
+    
+    if (!response.ok) {
+      throw new Error('Login failed');
+    }
+    
+    return await response.json();
+  } catch (error) {
+    console.error('Login error:', error);
+    throw error;
+  }
+};
+
 export default api;
