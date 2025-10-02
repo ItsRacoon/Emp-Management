@@ -1,0 +1,4 @@
+[build]
+builder = "maven"
+buildCommand = "mvn clean install"
+startCommand = "java -jar target/leave-management-0.0.1-SNAPSHOT.jar"
