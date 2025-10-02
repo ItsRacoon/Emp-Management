@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <copy file="Backend/target/Backend-0.0.1-SNAPSHOT.jar" tofile="target/Backend-0.0.1-SNAPSHOT.jar" />
+  </target>
+</project>
